@@ -26,20 +26,23 @@ public class HomeActivity extends AppCompatActivity {
 
 
         binding.btmNavBarView.setOnItemSelectedListener(item -> {
-            switch (item.getItemId()){
-                case R.id.home:
-                    replaceFragment(new Home_Fragment());
-                    break;
-                case R.id.scan:
-                    replaceFragment(new record_fragment());
-                    break;
-                case R.id.card:
-                    replaceFragment(new profile_fragment());
-                    break;
-                case R.id.menu:
-                    replaceFragment(new profile_fragment());
-                    break;
-
+            if (item.getTitle().equals("Home")) {
+                replaceFragment(new Home_Fragment());
+                //                case R.id.scan:
+//                    replaceFragment(new record_fragment());
+//                    break;
+//                case R.id.card:
+//                    replaceFragment(new profile_fragment());
+//                    break;
+//                case R.id.menu:
+//                    replaceFragment(new profile_fragment());
+//                    break;
+            }else if(item.getTitle().equals("Scan to Pay")){
+                replaceFragment(new Scanner_Fragment());
+            }else if(item.getTitle().equals("My Card")){
+                replaceFragment(new Cards_Fragment());
+            }else if(item.getTitle().equals("More")){
+                replaceFragment(new More_Fragment());
             }
             return true;
         });

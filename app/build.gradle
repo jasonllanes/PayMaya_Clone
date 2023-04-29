@@ -5,9 +5,11 @@ plugins {
 android {
     namespace 'com.example.paymaya'
     compileSdk 33
+
     buildFeatures {
         viewBinding true
     }
+
     defaultConfig {
         applicationId "com.example.paymaya"
         minSdk 24

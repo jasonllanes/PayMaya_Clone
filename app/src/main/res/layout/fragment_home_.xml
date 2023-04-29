@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/layout"
     android:background="@color/white"
     tools:context=".Home_Fragment">
 
@@ -21,6 +22,7 @@
             android:background="@drawable/paymaya_logo"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRewards"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rewards"
@@ -111,6 +113,7 @@
                                 android:orientation="vertical">
 
                                 <ImageView
+                                    android:id="@+id/btnSend"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:background="@drawable/send_money"/>
@@ -139,6 +142,7 @@
                                 android:orientation="vertical">
 
                                 <ImageView
+                                    android:id="@+id/btnReceive"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:background="@drawable/receive_money"/>
@@ -166,6 +170,7 @@
                                 android:orientation="vertical">
 
                                 <ImageView
+                                    android:id="@+id/btnBank"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:background="@drawable/bank_transfer"/>
@@ -193,6 +198,7 @@
                                 android:orientation="vertical">
 
                                 <ImageView
+                                    android:id="@+id/btnAdd"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:background="@drawable/add_money"/>
@@ -241,6 +247,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/btnPay"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:background="@drawable/pay_bills"/>
@@ -264,6 +271,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/btnLoad"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:background="@drawable/load"/>
@@ -288,6 +296,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/btnData"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:background="@drawable/data"/>
@@ -311,6 +320,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/btnTreats"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:background="@drawable/treats"/>
@@ -352,6 +362,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/btnTreat_1"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/treat_0"
@@ -359,6 +370,7 @@
                         android:orientation="vertical"/>
 
                     <LinearLayout
+                        android:id="@+id/btnTreat_2"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/treat_2"
@@ -389,6 +401,7 @@
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:id="@+id/btnViewAll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
